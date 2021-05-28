@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+body{
+	background-image: url(../imgs/Background.jpg);
+	background-size: 100%;
+}
+h1{
+ text-align: center;
+ margin-top: 250px;
+ font-size: 90px;
+ color: #59022B;
+}
+input{
+	margin-left: 480px;
+	margin-top: 170px;
+	padding: 25px;
+	text-align: center;
+	font-size: 35px;
+	font-family: bold;
+	padding-left: 75px;
+	padding-right: 75px;
+	border-radius: 45px;
+	color: #fff;
+	background-color: #0396A6;
+	border:solid 1px #0396A6;
+}
+

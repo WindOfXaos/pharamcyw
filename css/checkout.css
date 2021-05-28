@@ -1,0 +1,176 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Raleway;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+	background-image: url(../imgs/Background.jpg);
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ul{
+	display: flex;
+    background-color: #59022bea;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    padding-left: 115px;
+	align-items: center;
+}
+.logo{
+    padding-right: 200px;
+    mix-blend-mode: lighten;
+}
+ul li img{
+    width: 90px;
+    height: auto;
+}
+ul li{
+    display: inline-block;
+    padding-right: 25px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.icon img{
+    width: 85%;
+}
+.profile img{
+    width: 100%;
+    height: 1%;
+}
+.profile{
+	padding-right: 0px;
+}
+#name {
+    color:#79E6F2;
+    font-family: Lato;  
+    font-weight: normal;
+    position: absolute;
+    top: 50px;
+    left: 455px;
+    z-index: 1;
+}
+#price{
+    color:white;
+    font-family: Lato;
+    font-weight: normal;
+    position: absolute;
+    top: 85px;
+    left: 455px;
+    z-index: 1;
+}
+#qty{
+    position: absolute;
+    font-family: Lato;
+    font-weight: normal;
+    color:white;
+    top: 165px;
+    left: 555px;
+}
+footer ul{
+    height: 200px;
+    padding-left: 60px;
+    margin-top: 75px;
+}
+footer ul h3{
+    position: relative;
+    top: 0px;
+}
+footer ul li a{
+    font-size: 15px;
+    font-weight: bold;
+}
+footer ul li p{
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    height: 238px;
+}
+.product{
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    position: relative;
+}
+.product img{
+    position: absolute;
+}
+.layout1 {
+    left: 140px;
+}
+.layout2 {
+    top: 20px;
+    left: 160px;
+}
+.layout3 {
+    top: 33px;
+    left: 170px;
+}
+.layout4 {
+    top: 25px;
+    left: 960px;
+}
+.layout5 {
+    top: 145px;
+    left: 650px;
+}
+.layout6 {
+    top: 145px;
+    left: 440px;
+}
+.layout7 {
+    top: 145px;
+    left: 468px;
+}
+.layoutcheck {
+    position: fixed;
+    top: 280px;
+    right: 60px;
+    z-index: 2;
+}
+.checkbutton {
+    position: fixed;
+    top: 480px;
+    right: 115px;
+    z-index: 2;
+}
+#total{
+    position: fixed;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 35px;
+    color:#79E6F2;
+    top: 325px;
+    right: 265px;
+    z-index: 2;
+}
+#totalX{
+    position: fixed;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 35px;
+    color:white;
+    top: 325px;
+    right: 235px;
+    z-index: 2;
+}
+
+
+
+
+::placeholder{
+	font-size: 20px;
+	color: #025159;
+};

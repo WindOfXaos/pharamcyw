@@ -1,0 +1,141 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Raleway;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+	background-image: url(../imgs/Background.jpg);
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ul{
+	display: flex;
+    background-color: #59022bea;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    padding-left: 115px;
+	align-items: center;
+}
+.logo{
+    padding-right: 200px;
+    mix-blend-mode: lighten;
+}
+ul li img{
+    width: 90px;
+    height: auto;
+}
+ul li{
+    display: inline-block;
+    padding-right: 25px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.icon img{
+    width: 85%;
+}
+.profile img{
+    width: 100%;
+    height: 1%;
+}
+.profile{
+	padding-right: 0px;
+}
+input{
+    display: inline-block;
+    margin-left: 1393px;
+    margin-top: 45px;
+    height: 50px;
+    border: solid 1px white;
+    width: 350px;
+}
+label{
+	display: inline-block;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #59022B;
+    margin-left: -5px;
+    margin-top: 45px;
+    width: 45px;
+    text-align: center;
+}
+input:focus {
+	outline: none;
+  }
+input[type=text] {
+	font-size: 20px;
+	padding: 12px 20px 16px;
+	height: 52px;
+	box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+    height: 450px;
+}
+.product{
+    display: flex;
+    flex-grow: 0.23;
+    justify-content: center;
+    position: relative;
+}
+.product img{
+    position: absolute;
+}
+
+.layout1 {
+    top: 200px;
+    left: 78px;
+}
+
+.layout2 {
+    top: 330px;
+    left: 290px;
+}
+.layout3 {
+    top: 15px;
+}
+h2{
+    position: absolute;
+    top: 270px;
+    z-index: 1;
+}
+h3{
+    position: absolute;
+    top: 305px;
+    z-index: 1;
+}
+footer ul{
+    height: 200px;
+    padding-left: 60px;
+}
+footer ul h3{
+    position: relative;
+    top: 0px;
+}
+footer ul li a{
+    font-size: 15px;
+    font-weight: bold;
+}
+footer ul li p{
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+::placeholder{
+	font-size: 20px;
+	color: #025159;
+};
