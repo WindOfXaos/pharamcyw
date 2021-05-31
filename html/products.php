@@ -6,11 +6,6 @@
 	$result = $result->fetch_all(MYSQLI_ASSOC);
 	//var_dump($result)
 	//echo $result[0]["email"]
-	
-	
-	
-	
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +23,7 @@
                 <li><a href="#bottom">CONTACT US</a></li>
                 <div style="margin-left: 925px;"></div>
                 <li class="icon"><a href="checkout.php"><img src="../iconst/cart.svg"></a></li>
-                <li class="profile"><img src="../iconst/userimg.svg"></li>
+                <li class="profile"><a href="profile.php"><img src="../iconst/cat.png"></a></li>
             </ul>
         </nav>
         <div style="position: fixed; top: 100px; z-index: 2;">
@@ -37,7 +32,6 @@
         </div>
 	<?php
 		$xc = count($result);
-		echo"$xc";
 		$i=0;
 		echo"<div class='row'>";
 		while($i < $xc ) {
@@ -45,7 +39,9 @@
                 echo "</div>";
                 echo "<div class='row'>";
             }
+            
             $product = $result;
+            $id = $product[$i]["id"];
             $name = $product[$i]["name"];
             $price = $product[$i]["price"];
             $img = $product[$i]["image"];
@@ -55,7 +51,7 @@
 						<h2 style='color:white;'>$name</h2>
 						<h3 style='color:#79E6F2;'>Price: <span style='color:white;'>$price$</span></h3>
 						<img src='../iconst/prodback.svg'>
-						<a href='checkout.php'><img class = 'layout2' src='../iconst/arrow.svg'></a>
+						<a href='checkout.php?idp=$id'><img class = 'layout2' src='../iconst/arrow.svg'></a>
 						<img class = 'layout3' src='$img'>
 						</div>";
 

@@ -19,8 +19,7 @@ include("auth.php");
                 <div style="margin-left: 925px;"></div>
 				<li><a href="logout.php">Log OUT</a></li>
                 <li class="icon"><a href="checkout.php"><img src="../iconst/cart.svg"></a></li>
-                <li class="profile"><img src="../iconst/userimg.svg">
-                </li>
+                <li class="profile"><a href="profile.php"><img src="../iconst/cat.png"></a></li>
             </ul>
         </nav>
         <h1>Welcome <?php echo $_SESSION['username']; ?> to TMYMKA Pharmacy</h1>

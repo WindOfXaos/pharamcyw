@@ -38,10 +38,10 @@ a{
 }
 
 .icon img{
-    width: 85%;
+    width: 400%;
 }
 .profile img{
-    width: 100%;
+    width: 57%;
     height: 1%;
 }
 .profile{
@@ -64,7 +64,7 @@ label{
     font-size: 20px;
     font-weight: bold;
     background-color: #59022B;
-    margin-left: -5px;
+    margin-left: -20px;
     margin-top: 45px;
     width: 45px;
     text-align: center;
