@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 		<h1>TMYMKA Pharmacy</h1>
-		<a href="Login.php"><input type="button" value="Login"></a>
+		<a href="login.php"><input type="button" value="Login"></a>
 		<a href="productsguest.html"><input type="button" value="Guest"></a>
 	</div>
 </body>
