@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>home</title>
-	<link rel="stylesheet" type="text/css" href="../css/home.css">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
 </head>
+
 <body>
-<?php
-//include auth.php file on all secure pages
-include("auth.php");
-?>
-	<div>	
+    <?php
+    //include auth.php file on all secure pages
+    include("auth.php");
+    ?>
+    <div>
         <nav>
             <ul>
                 <li class="logo"><img src="../imgs/Logo.png"></li>
@@ -17,7 +19,7 @@ include("auth.php");
                 <li><a href="products.php#bottom">ABOUT</a></li>
                 <li><a href="products.php#bottom">CONTACT US</a></li>
                 <div style="margin-left: 925px;"></div>
-				<li><a href="logout.php">Log OUT</a></li>
+                <li><a href="logout.php">Log OUT</a></li>
                 <li class="icon"><a href="checkout.php"><img src="../iconst/cart.svg"></a></li>
                 <li class="profile"><a href="profile.php"><img src="../iconst/cat.png"></a></li>
             </ul>
@@ -28,6 +30,7 @@ include("auth.php");
         <label>
             <a href="products.php"><img src="../iconst/search.svg" style="width: 40%; height: 1%;"></a>
         </label>
-	</div>
+    </div>
 </body>
+
 </html>

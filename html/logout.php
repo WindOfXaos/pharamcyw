@@ -7,4 +7,3 @@ if(session_destroy())
 header("Location: login.php");
 }
 //cat show image
-?>

@@ -1,20 +1,22 @@
 <?php
-	require('db.php');
-	$query = "SELECT * from product";
-	
-	$result = mysqli_query($con,$query) or die(mysqli_error($con));
-	$result = $result->fetch_all(MYSQLI_ASSOC);
-	//var_dump($result)
-	//echo $result[0]["email"]
+require('db.php');
+$query = "SELECT * from product";
+
+$result = mysqli_query($con, $query) or die(mysqli_error($con));
+$result = $result->fetch_all(MYSQLI_ASSOC);
+//var_dump($result)
+//echo $result[0]["email"]
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>products</title>
-	<link rel="stylesheet" type="text/css" href="../css/products.css">
+    <title>products</title>
+    <link rel="stylesheet" type="text/css" href="../css/products.css">
 </head>
+
 <body>
-	<div>	
+    <div>
         <nav style="position: sticky; top: 0; z-index: 2;">
             <ul>
                 <li class="logo"><img src="../imgs/Logo.png"></li>
@@ -30,16 +32,16 @@
             <input type="text" placeholder="Search stock...">
             <label><img src="../iconst/search.svg" style="width: 40%; height: 1%;"></label>
         </div>
-	<?php
-		$xc = count($result);
-		$i=0;
-		echo"<div class='row'>";
-		while($i < $xc ) {
+        <?php
+        $xc = count($result);
+        $i = 0;
+        echo "<div class='row'>";
+        while ($i < $xc) {
             if (($i % 4) == 0 and $i != 0) {
                 echo "</div>";
                 echo "<div class='row'>";
             }
-            
+
             $product = $result;
             $id = $product[$i]["id"];
             $name = $product[$i]["name"];
@@ -56,14 +58,14 @@
 						</div>";
 
             $i++;
-		}
-            echo "</div>";
+        }
+        echo "</div>";
 
-			
 
-	?>
-        <footer id = "bottom">
-            <ul>    
+
+        ?>
+        <footer id="bottom">
+            <ul>
                 <li>
                     <a href="">CONTACT US</a>
                     <p>+44 345 678 903</p>
@@ -80,6 +82,7 @@
                 </li>
             </ul>
         </footer>
-	</div>
+    </div>
 </body>
+
 </html>
