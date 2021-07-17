@@ -28,7 +28,7 @@ require('db.php');
         $id = $_GET['idp'];
         echo"$id";     
         $query = "SELECT * from product where id=$id";
-	    $result = mysqli_query($con,$query) or die(mysql_error());
+	    $result = mysqli_query($con,$query) or die(mysqli_error($con));
 	    $result = $result->fetch_all(MYSQLI_ASSOC); 
         $product = $result;
         $name = $product[0]["name"];

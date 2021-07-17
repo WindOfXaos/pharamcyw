@@ -25,7 +25,7 @@ if (isset($_REQUEST['fullname'])){
 
         $query = "SELECT * from details where username='".$_SESSION['username']."'";
 
-        $res = mysqli_query($con,$query) or die(mysql_error());
+        $res = mysqli_query($con,$query) or die(mysqli_error($con));
         $res = $res->fetch_all(MYSQLI_ASSOC);
         if($result){
 			//echo"<script>alert.document('your order has been confirm')</script>"

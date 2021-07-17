@@ -22,7 +22,7 @@ if (isset($_REQUEST['username'])){
 
 $query = "SELECT * from users where username='$username'";
 
-$res = mysqli_query($con,$query) or die(mysql_error());
+$res = mysqli_query($con,$query) or die(mysqli_error($con));
 $res = $res->fetch_all(MYSQLI_ASSOC);
 $tmp=0;
 if(count($res) == 0){

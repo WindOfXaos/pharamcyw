@@ -2,7 +2,7 @@
 	require('db.php');
 	$query = "SELECT * from product";
 	
-	$result = mysqli_query($con,$query) or die(mysql_error());
+	$result = mysqli_query($con,$query) or die(mysqli_error($con));
 	$result = $result->fetch_all(MYSQLI_ASSOC);
 	//var_dump($result)
 	//echo $result[0]["email"]

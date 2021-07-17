@@ -2,7 +2,7 @@
 require('auth.php');
 require('db.php');
 $query = "SELECT * from details , users where users.username='".$_SESSION['username']."' and details.username='".$_SESSION['username']."'";
-$res = mysqli_query($con,$query) or die(mysql_error());
+$res = mysqli_query($con,$query) or die(mysqli_error($con));
 $res = $res->fetch_all(MYSQLI_ASSOC);
 
 
