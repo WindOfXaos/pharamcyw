@@ -33,7 +33,7 @@ and password='" . md5($password) . "'";
 			header("Location: home.php");
 		} else {
 			echo "<div class='form'>
-<h3 style:\"text-align: center;\">Username/password is incorrect.</h3>";
+<h3 style=\"text-align: center;\">Username/password is incorrect.</h3>";
 		}
 	}
 	?>
