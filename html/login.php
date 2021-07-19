@@ -35,7 +35,6 @@ and password='" . md5($password) . "'";
 			echo "<div class='form'>
 <h3>Username/password is incorrect.</h3>
 <br/>Click here to <a href='login.php'>Login</a></div>";
-			header("Location: home.php");
 		}
 	}
 	?>
